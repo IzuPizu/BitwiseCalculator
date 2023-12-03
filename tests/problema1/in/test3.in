@@ -1,0 +1,11 @@
+10
+One common situation is to use typedef names for various integer quantities then make an
+appropriate   set of choices of short   int  and long  for           each host machine
+It may be possible to cope with even bigger numbers by using a double
+One method of communicating data between functions is    for   the calling function to provide a
+list            of values called arguments to the function   it calls
+The parentheses after the function   name surround the argument list
+As before all examples have been tested directly from the text which is in machine-readable
+form one method of communicating data between functions is for the calling function to provide a
+list     of values  called arguments to the function it calls
+this is the purpose of the         while           loop 

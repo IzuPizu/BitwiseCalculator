@@ -1,0 +1,60 @@
+The examples we have seen so far are quite simple but lock management is 
+                                                                      __ 
+really hard and full of pitfalls The most infamous
+                                                  
+of them is deadlock a situation in which two or more competing 
+        __                      __           __                
+threads are waiting for       each other to proceed and thus neither
+                    ______________                                  
+ever does so Deadlocks usually occur when more than one lock or monitor 
+                                                             __         
+lock are involved   JVM often is able to detect the
+                              __                   
+deadlocks in the running applications and warn the developers
+          __                                                 
+When a function is        called an argument of the same type as   the parameter must be
+                __                                                                      
+passed to       the function For       each parameter
+                                                     
+When an       object containing member objects is initialized    multiple constructor calls are
+                                               __                                              
+to be executed     One of these is     the constructor for the complete object      and the others
+                                __                     ___                                        
+are constructors    for the member objects   The order of the constructor calls is significant in
+                    ___                                                         __             __
+this case   First the member objects are created and initialized    this then allows the 
+                                                                                         
+constructor to create    the whole object Unless otherwise stated   the default constructor will
+                                                                                                
+be called        for                 Each member object
+                 ___                                   
+Floating-point constants     are of type    double by default     However     you can add F or f
+                                            ______                                          __  
+to designate     the sfloat type     or add L or l for the long     doubles type
+                                     __       __   ___                          
+This leads to implicit conversion  of the value of size to short and the integer     77 to double
+                                                                                           ______
+Please note    however       that the leading spaces in    the second line will be evaluated 
+                                                     __                                      
+as part   of the string    It is thus generally preferable to use the    first method
+                 ______       __                                                     
+that is           to terminate    the string with     and reopen it    with
+     __                               ______                               
+These include            stream classes                   for
+                                                          ___
+input and output          but also classes for representing    strings or handling error conditions
+                                           ___                         __                          
+Accuracy is   expressed in decimal places    This means that        six decimal places   allows a
+         __             __                                                                       
+programmer     to store two floating-point     numbers that differ within the first six decimal
+                                                                                               
+places as separate numbers
+                          
+The int     integer      type is tailor-made for computers             and adapts
+    ___                       __             ___                                 
+to the              length of a register on the computer
+                                                        
+The    pointer vekPtr will then reference the first         of a total of cnt array elements
+                                              ________________                              
+vekPtr has        to be a pointer to Type for this reason
+                                          ___            

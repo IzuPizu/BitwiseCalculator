@@ -1,0 +1,162 @@
+  Nume: Ureche Andreea-Maria
+  Grupa: 312 CC 
+  ------- 1.Text Highlight --------
+
+  Timp de implementare : 1 zi
+
+  Pentru aceasta problema am decis sa creez un vector de pointeri
+  la siruri de caractere pe care l-am alocat dinamic astfel incat 
+  sa ofere memorie pentru N pointeri la caractere.
+  Am folosit un string buffer static in care 
+  am citit fiecare linie introdusa , la finalul careia am 
+  aduagat un terminator NULL pentru a marca sfarsitul liniei.
+  Apoi am alocat dinamic memorie pe heap pentru vectorul de caractere
+  si am copiat linia citita in buffer in spatiul alocat.
+
+  Pentru a stoca keyword-urile am folosit tot un vector de pointeri
+  la caractere pe care l-am initializat cu keyword-urile predefinite.
+  
+  Pentru rezolvarea problemei am inceput prin a parcurge string-urile
+  si a afisa linia de text .
+  Am creat un vector ale caror elemente le-am initializat cu 0
+  la inceput si in care voi pune valoarea 1 acolo unde caracterul
+  trebuie subliniat cu underscore.
+  Am parcurs cu un for lista de keywords-uri  si cu un alt for 
+  caracterele de pe linia curenta.
+  In variabila key_length am salvat lungimea keyword-ului curent , 
+  iar in len_first_key am salvat lungimea primului cuvant din keyword .
+
+  Pentru a gasi un cuvant din linia curenta de text ce trebuie subliniat ,
+  am pus mai multe conditii care trebuie indeplinite , iar in caz contrar,
+  programul trece la urmatoarea iteratie , adica
+  (indexul urmatorului caracter de pe linie), iar verificarile se reiau .
+
+  Astfel ca : 
+    -> Daca primul caracter al keyword-ului curent
+     nu se potriveste cu caracterul curent de pe linie, 
+     se trece la urmatoarea iteratie.
+    -> Daca conditia precedenta a fost indeplinita,
+     verificam daca caracterul de pe pozitia precedenta 
+     reprezinta un delimitator, adica este intr-adevar inceputul
+     unui cuvant nou si nu exista posibilitatea de a avea 
+     potrivire pe un substring .In caz contrar, se trece
+     la urmatorul caracter.
+    -> Daca si aceasta conditie e indeplinita, verificam sa avem 
+     de asemenea un delimitator si la finalul cuvantului.
+
+     Pentru a asigura faptul ca subliniem atat caracterele ce fac
+     parte din keyword dar si spatiile libere in cazul keyword-urilor 
+     formate din doua cuvinte, am creat o functie extra_spaces ce are
+     rolul de a numara spatiile libere care sunt in plus , pana la 
+     intalnirea unui caracter.
+     Vom folosi aceasta functie doar in cazul in care keyword-ul 
+     este de format din 2 cuvinte .
+     -> Am comparat apoi caracterele din prima parte a keywordu-lui 
+     cu caracterele de pe linie ,comparand doar len_first_key caractere ,
+     adica lungimea primului cuvant din keyword.
+     Daca caracterele se potrivesc,  inseamna ca am gasit un keyword 
+     complet prezent pe linia de text si trebuie sa-l subliniem .
+  In cazul in care keyword-ul este format dintr-un singur cuvant,
+  apelam direct functia matching_key ce primeste ca parametrii 
+  index ul primului caracter ce trebuie subliniat, al ultimului 
+  caracter ce trebuie subliniat , cat si vectorul. 
+  Functia retine valoarea 1 pe pozitiile respective.
+     -> Daca insa keyword-ul are mai mult de un cuvant , 
+      comparam caracter cu caracter si a doua parte 
+      (al doilea cuvant din keyword cu caracterele ce urmeaza 
+       dupa spatiul/spatiile libere).
+  Daca si acestea se potrivesc , inseamna ca avem o potrivire completa 
+  pentru un keyword de 2 cuvinte ,si vom apela din nou functia matching_key 
+  cu indexul de pornire si cel de oprire tinand cont si de spatiile libere
+  in plus ce pot exista.
+  Dupa ce am cautat in toata lista de keyword-uri pentru linia de text 
+  curenta, afisam vectorul de sublinieri , inlocuind pozitiile in care
+  am salvat valoarea 1 cu underscore, si algoritmul se reia pana cand
+  am terminat de cautat in toate string-urile.
+  La finalul programului eliberam memoria alocata dinamic pentru vectorul 
+  de pointeri la caractere si pentru sirurile de caractere.
+
+   -------- 1.Calculator pe biti --------
+
+   Timp de implementare : 2 zile
+
+   Pentru rezolvarea acestei probleme am creat mai multe functii, 
+   cate una pentru fiecare operatie care poate avea loc :
+   adunare , interschimbare, rotatie la stanga , xor,
+   dar si o functie extraction ce extrage primii p biti incepand cu o anumita
+   pozitie.
+   Aceasta primeste ca parametrii numarul din care se vor extrage bitii ,
+   numarul de biti pe care dorim sa-i extragem si pozitia .
+   Am creat o variabila right_shift in care am salvat numarul dupa deplasarea 
+   acestuia spre dreapta cu pos - 1 astfel incat cei p biti sa inceapa de pe 
+   prima pozitie (LSB -> MSB). 
+   Intr-o alta variabila new_num am creat un numar (de forma 2 la puterea p) 
+   din care am scazut 1 pentru a ajunge la un numar de forma 11..1  
+   iar apoi am aplicat AND pe cele 2 variabile pentru a obtine setul de p biti.
+
+   Voi explica pe scurt functionalitatea fiecarei functii pentru operatii:
+
+    ->Functia op_add are rolul de a aduna 2 numere folosind operatiile 
+      pe biti, astfel ca aflam carry-ul aplicand AND pe cei doi operanzi,
+      aflam suma si o salvam in primul numar folosind XOR,  
+      deplasam la stanga cu 1 carry-ul deoarece acesta se adauga la
+      urmatorul bit, iar procesul se repeta pana cand carry-ul devine 0.
+
+    ->Functia op_ichange are rolul de a interschimba bitii de pe 
+     pozitiile p1 si p2 din primul numar , unde p1 reprezinta 
+     valoarea primilor doi biti din al doilea numar ,iar
+     p2 valoarea ultimilor 2 biti din al doilea numar . (de la MSB -> LSB) 
+     Fiindca in enuntul problemei indexarea incepea de la stanga 
+     la dreapta , am fortat pozitiile p1 si p2 sa ia valoarea 
+     corespunzatoare acestei indexari .
+     Apoi am interschimbat bitii de pe poztiile p1 si p2 din primul numar .
+
+    ->Functia op_lshift are rolul de a rotii la stanga nr1 de nr2 ori. 
+     Deoarece numarul poate fi reprezentat pe maxim 4 biti 
+     vom face deplasarea la stanga a bitilor in functie de rezultatul nr2 % 4 .
+     Daca restul este 0 inseamna ca ca toti bitii vor fi rotiti la stanga 
+     ajungand tot in pozitia initiala deci vom intoarce nr1
+     asa cum este. In caz contrar , i vom deplasa cu nr2 % 4 
+     catre stanga iar pentru ca acesti ultimi biti vor avea valoarea 0 
+     dupa deplasare , vom deplasa in acelasi
+     timp bitii din stanga catre dreapta si vom folosi OR pe 
+     cele 2 valori pentru a obtine rezulatul pe care il vom masca
+     la final pentru a obtine doar bitii de care avem nevoie.
+
+    ->Functia op_xor are rolul de a aplica operatorul XOR pe 
+     cele doua numere dar fara a folosi explicit ^ . 
+     Aceasta returneaza defapt echivalentul operatorului XOR 
+     folosind ceilalti operatori binari.Expresia booleana
+     pe care am folosit-o este : (nr1 AND !nr2) OR (!nr1 AND nr2)
+    
+    In functia main am inceput prin a crea un vector de pointeri
+    la functiile de mai sus , am citit numarul de operatii precum 
+    si numarul M din care vor fi extrase operatiile si numerele.
+    Am folosit un vector de tip unsigned pentru a stoca cei N*6+4 biti .
+    Folosind un for cu indecsii : k pentru pozitia din vector, i pentru numar,
+    j pentru operatie ; am parcurs numarul de la LSB catre MSB si am extras
+    cate 4 biti incepand cu pozitia i pentru pentru a salva valoarea numarului 
+    in v[k] si cate 2 biti incepand cu pozitia j pentru a salva valoarea
+    operatiei in v[k+1].
+    Indexul i si j va creste cu 6 de fiecare data pentru a trece la
+    indexul aferent urmatorului numar (peste inca 6 biti incepe reprezentarea
+    unui alt numar ),respectiv urmatoarei operatii.
+    Vectorul rezultat va avea forma : 
+    v[0] = nr1 , v[1] = operatie , v[2] = nr2 , v[3] = operatie , ...
+    Deoarece calculul se va efectua de la stanga la dreapta ,
+    am parcurs vectorul de la final catre inceput , si am testat valoarea
+    operatiei. Astfel folosind vectorul de pointeri 
+    la functii , se va apela functia de adunare atunci cand valoarea operatiei
+    este 0  , functia de interschimbare cand valoarea operatiei este 1,
+    functia de rotatie cand valoarea operatiei este 2 , sau functia
+    de xor cand valoarea operatiei este 3. 
+    Rezultatul returnat de catre functie va fi salvat in variabila result ,
+    iar mai apoi nr1 va fi reinitializat cu aceasta valoare pentru 
+    a putea continua efectuarea operatiilor cu noul nr1 si nr2. 
+    Deoarece rezultatul trebuie sa fie un numar tot pe 4 biti 
+    voi trunchia rezultatul extragand doar primii 4 biti 
+    folosind functia extraction in cazul in care acesta depaseste 
+    numarul 15 (1111).
+    Rezultatul final al calculului se va afla tot in nr1.
+
+

@@ -1,0 +1,51 @@
+50
+the method s signature is a combination of the name of the method the type of object or
+base type this method returns and a list          of parameters
+for and while loops for iteration or repeating a statement or statements multiple
+times                 double-slashes can be used      for a single line of comment
+int          arg1        float           arg2      string    arg3
+for     each of these rectangles   you have two methods to choose       from
+note how the arguments are grouped    in the listing   putting quotes around foo   bar causes that
+argument to    be treated as one      unit inside the argument array
+java can understand method overloading as long as each parameter list        is            unique 
+sfor each method name         you can also create a color object using three     floats from 0 to 1
+IEEE 754 an international standard for defining floating-point numbers and arithmetic
+first              of all  the finalizer method is      not guaranteed to be called until 
+the object s memory                         is actually reclaimed
+a single animation frame is     constructed inside that       while loop
+Out keywords are      first       of      for        for  each   from    in    is
+is      a     list     of unit      or    while      int     float      double    string
+not    first      firsttt of     ffirst      of     first
+of        ffor      forr     forr eaaaach ffor each     for
+each     intt      orint     floats   
+strings and arrays are real                       objects in Java
+you           should get the string    hello world
+java supplies    wrapper    classes    for    each of    the base types
+java defines eight primitive types of data    byte  short
+int    long    char  float    double           and boolean
+There are            two
+kinds of floating-point types float and double
+which represent single- and    double-precision   numbers respectively
+returns a Class object        for      each      of the public classes
+and interfaces that are    members of the invoking     object
+For        each word the
+program keeps track of its length in the current font and automatically advances to the next
+line if              the word will not fit on the current line
+This       is    not a list   of minor tweaks or incremental upgrades
+The output of this program is the list         of words
+float
+int
+boolean
+form
+string
+integer
+char
+for
+while
+returns a value                that indicates an enumeration
+constant s position             in the list   of constants
+C is               a language designed by        and for programmers
+Thus                the two
+statements inside the block form a   logical unit
+and one statement               cannot execute without
+the other also                         executing

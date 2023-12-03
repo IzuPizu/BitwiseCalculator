@@ -1,0 +1,50 @@
+appendix C is   a concise summary of the changes from the original version
+           ______                                ____                     
+an enumeration is a list
+               ____     
+of constant          integer values
+                                   
+C does not  provide any operators for processing an entire string of characters as a unit
+                                  ___                      ______                    ____
+in malloc the requested size in characters is rounded up to the proper number of header-sized units
+__                           __            __                                                      
+this is     either between two existing blocks or at the end of the list
+     __                                        __                       
+the code for       each statement is either a single statement
+         ______________           __                          
+or a group of                   them in braces
+__                                   __       
+writing floating-point constants with explicit decimal points even when they have integral values
+                                                                                                 
+emphasizes their      floating-point nature for human readers
+                                            ___              
+float single-precision floating point
+_____                                
+this operator   cannot be applied to a float     or       double\
+                                       _____     __              
+this algorithm is a hash-search
+               ____            
+typedef       int length makes the name length a synonym   for    int
+              ___                                          ___    ___
+for     the moment our only use of character strings will be as arguments for printf
+___                                                                       ___       
+if the string   is   to be found anywhere it will be in the list        of blocks beginning there
+       ______   __                                   __     ______________                       
+adjacent string literals are concatenated into a single string
+         ______                                         ______
+a string     literal also called    a string    constant is    a sequence of   characters
+  ______                              ______             _______                         
+surrounded by double quotes
+              ______       
+strcpy is a function returning int   with two arguments  the first a character pointer and the
+       ____                    ___                                                            
+second a pointer to constant characters
+                                       
+for       each loops are not appropriate when you want to modify        the array
+______________                                                                   
+it                   would                   be more
+                                                    
+precise to enclose the   initializers for     each row
+                                      ____________    
+or                  structure                 in braces
+__                                            __       

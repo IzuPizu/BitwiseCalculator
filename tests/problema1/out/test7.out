@@ -1,0 +1,150 @@
+First of all a compiler has to
+                              
+understand Java a complex high-level language
+                                             
+first            of          all a compiler has to
+___________________                               
+understand Java a complex high-level language
+                                             
+for      example a mailing-list module might contain a list     of
+___                                                    ___________
+names and addresses along with a subroutine for adding a new name a subroutine for printing
+                                            ___                                ___         
+mailing labels                     and so forth
+                                               
+A mailing list object      for example     has a state consisting
+                           ___                                   
+of a list      of names and addresses
+     ____________                    
+An enum is   a type that has a fixed list  fof possible values which is specified when the enum
+        ______                                                       __                        
+is                  created
+__                         
+Consider the list of                   numeric types
+             _______                                
+byte     short     int long floatdouble
+                   ___                 
+A value of a type             that occurs earlier in 
+                                                  __ 
+this list can be converted automatically to a value that
+                                                        
+occurs        later
+                   
+This program reads a line        of text entered by the user
+                                                            
+It prints a list      of the letters that occur in the text
+            ____________                        __         
+and it reports how many different             letters were found
+                                                                
+Get a positive integer     N      from the user
+                                  ____         
+Let divisorCount be              0
+                                  
+for each number testDivisor in the range from 1 to N
+________                    __           ____       
+if testDivisor             is a divisor of N
+                           ____             
+Count it by           adding 1 to divisorCount
+                                              
+Output           the count
+                          
+for             beach      item in the sequence
+___                             __             
+if the      item passes the test
+                                
+process it
+          
+for          each letter of the alphabet
+_________________                       
+if the                     letter occurs in str
+                                         __    
+Print           the letter
+                          
+Add                            1 to count
+                                         
+Output              the count
+                             
+For each line       read and ignore characters up to the colon
+                                                              
+The primitive types are named
+                             
+byte short int long float double char and boolean
+           ___      _____ ______                 
+The float and double types hold real numbers
+    _____     ______                        
+A         double takes up 8 bytes
+          ______                 
+The coverage of graphical user interface programming has been reorganized, much of it has
+                                                                                         
+been rewritten and new material has been added
+                                              
+A class can implement an    interface by providing an implementation for    each      of
+                                                                     ___________        
+the methods               specified by the interface
+                                                    
+The value of the variable is an object belonging to the enumerated type class          There
+                          __                                                                
+is    one such object for   each enumerated type constant
+__                    __________                         
+and these are the only objects of the
+                                     
+class     that can ever be created   It is really these objects that represent
+                                        __                                    
+the possible values of
+                      
+the enumerated type   The enumerated type constants are actually
+                                                                
+variables that                             refer to these objects
+                                                                 
+For               each row of the board
+                                       
+for each column of the board
+________                    
+if       one of the player    s pieces is at this location
+                                       __                 
+if it                is legal to jump to row 2 column 2
+                     __                                
+add this                 move to moves
+                                      
+Start with              an empty stack
+                                      
+for              each item in the expression
+_____________________      __               
+if the item                               is a number
+                                          ____       
+Push the               number onto the stack
+                                            
+else            if the item is an operator
+                            __            
+Pop the operands      from the stack             Can generate an error
+                      ____                                            
+Apply              the operator to the operands
+                                               
+Push the result onto the stack
+                              
+else
+    
+There              is an error in the expression
+                   __          __               
+Pop a number from the stack             Can generate an error
+             ____                                            
+if the      stack is not empty
+                  __          
+There is an error in the expression
+      __          __               
+else
+    
+The last number that was      popped is the value of the expression
+                                     __                            
+for example a mailing-list module might contain a list 
+___                                                    
+of   names and addresses along with a subroutine for adding a new name   a subroutine for printing
+                                                 ___                                  ___         
+mailing labels   and so forth   In such modules  the data itself is often hidden inside the module
+                                                                 __                               
+a program that uses the module can then manipulate the data only indirectly    by calling the
+                                                                                             
+subroutines provided by the module  This protects the data       since it can only be manipulated
+                                                                                                 
+in known      well-defined ways
+__                             

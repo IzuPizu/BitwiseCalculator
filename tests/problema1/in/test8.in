@@ -1,0 +1,91 @@
+90
+The for loop assigns a variable to successive items in     a sequence  and
+executes                 one or more statements for each item
+In our     first example
+for instance      we  ll assign the name x to e  ach of the three items in a list in
+turn   from left to right  and the print statement will be executed   for    each
+this for bla      each is not going to  woooooooork
+We used the    string split method here to chop up the line on its comma delimiters
+the result is a list   of substrings containing the         individual numbers
+In general            leading
+and trailing     double underscores is the naming pattern   Python uses for implementation
+details    The names without the underscores in this list are the callable methods on string objects
+Uses a variable named x  created when it s assigned  to hold onto a string      object
+James Gosling initiated Java language project in June 1991 for use in one of his many settop box 
+projects The language initially called Oak after an oak tree that stood outside
+Gosling s office also went by the name Green and ended up later being renamed as Java
+from a list                     of random words
+Interfaces work well  but they do have some limitations The big drawback is
+that you must write the code for   each method that an interface declares
+The curly braces are used when multiple statements need to
+take place for                     each option
+The while    and do-while loops perform the same  function The only difference
+is that the while loop verifies the expression before executing the statement   and
+the do-while     loop verifies the expression after executing the statement  This is   a
+major  difference that can   be extremely helpful if   used properly
+When used,the Java access specifiers public protected,   and private
+are placed in front of each definition for each member in your class,
+whether it’s a field or a method. Each access specifier controls the access
+for only that particular definition.
+However blank finals provide much more flexibility in         the use of the
+final keyword since  for example    a final field inside a class can now be
+different for      each object and yet it retains   its immutable quality Here s an example
+This works  but there s a major drawback  You must write type-specific
+methods for      each new Instrument class you add  This means more
+programming in                       the first place
+The only reason to establish this common interface is so it can be
+expressed differently for     each different subtype It establishes a basic
+form  so you can say what s in     common with all the derived classes
+You might think that there should be a specialized type      of
+ArrayList for    each of the primitive data types   but Java doesn t provide
+this for you. Some sort of templatizing mechanism might someday
+provide a         better way for Java to handle this problem
+Because code needs to be created for    Each primitive type as      well as
+Object     there     s a lot of      nearly duplicated code
+The following code establishes an inner base class to use as a test framework  then creates an
+array of anonymous inner classes one for       each different test
+for      each string being analyzed a while     loop is entered and tokens    are
+pulled off the                  string
+The source code package for this book provides an HTML         page for     each of
+the applets in this book     and thus many    examples of the applet tag
+modify SlowMap so that instead of two AarrayLists it holds a
+single arraylist        of                  MPair objects
+The exception   specification uses an additional keyword     throws followed
+by a list               of all the potential exception types
+This will catch any exception  so if you use it you ll want to put it at the
+end of your list      of handlers to avoid preempting any exception handlers
+that might                   otherwise follow it
+However the String
+object that s was pointing to is still occupying memory  In this bit of code
+there is no way to access the object because the only reference to it is    out
+of scope   In later chapters you   ll see how the reference to the object can be
+passed     around and duplicated during the     course of a program
+The type of the reference must be correct however If the argument is supposed to be a
+String             what you pass in must be a string
+Consider          a method that takes a string as its      argument
+Note that a boolean value is    automatically converted to an appropriate
+text form  if it s used where a      string is expected
+the compiler normally takes exponential numbers as doubles           so without
+the trailing f      it will give you an error telling you     that you must use a cast
+to convert                   double to float
+The interface keyword takes the concept of an abstract class one step
+further by preventing any function definitions at all    The interface is           a
+very     handy and commonly used tool   as it provides the      perfect separation
+of interface and implementation   In addition     you can combine many
+interfaces     together   if you wish    whereas inheriting from multiple regular
+classes or                abstract classes is       not possible
+The second approach is   to create objects dynamically in   a pool of memory
+called     the heap  In this approach    you don   t know until run-time how
+many objects you    need     what their lifetime is    or what their exact type is
+Those are     determined at the spur of the    moment while the program is running
+Once a class has been created and tested    it should     represent a
+useful    unit of code    It turns out that this reusability is    not nearly so easy to
+achieve       as many would hope   it takes experience and insight to produce a
+good design      But once you have such a design   it begs to be reused   Code
+reuse is     one of the greatest    advantages that object-oriented   programming
+languages            provide
+I see Java in    this same way   as an attempt to elevate            the programmer
+away from           an operating-system mechanic and         toward being a software
+craftsman
+If you           re really into slimming
+down      there are actually Palm Pilot   versions of the         book floating around
